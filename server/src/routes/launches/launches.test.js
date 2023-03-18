@@ -9,8 +9,9 @@ const {
 
 describe('Launches API', ()=>{
     beforeAll(async()=>{
-       await connectToMongo();
-       await loadPlanetsData();
+        jest.setTimeout(60000);
+        await connectToMongo();
+        await loadPlanetsData();
     })
     afterAll(async()=>{
         await mongoDisconect();
