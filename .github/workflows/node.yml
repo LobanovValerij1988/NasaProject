@@ -8,7 +8,7 @@ jobs:
   build:
     env:
       CI: true
-    stratagy:
+    strategy:
       matrix:
         node-version: [14.x, 16.x]
     runs-on: ubuntu-latest
